@@ -1,0 +1,9 @@
+//не уверен что требуется именно это...
+double y =0, x,z=0;
+Console.Write("x=");
+x = double.Parse(Console.ReadLine());
+for (int h=1; h <= 10; h++)
+{
+    y = Math.Cos(x + h);
+    Console.WriteLine("y= {0}", y);
+}

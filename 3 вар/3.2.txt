@@ -1,0 +1,11 @@
+double summ = 0;
+Console.Write("Введите число повторений=");
+int p = int.Parse(Console.ReadLine());
+Console.Write("N=");
+int n = int.Parse(Console.ReadLine());
+for (int i = 0; i < p; i++)
+{
+    summ += Math.Pow(n + i, 2);
+}
+summ += Math.Pow(2 * n, 2); // Как я понял, это прибавляется вконце.
+Console.WriteLine("{0}", summ);

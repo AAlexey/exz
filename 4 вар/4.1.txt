@@ -1,0 +1,17 @@
+Random rn = new Random();
+int[] x = new int[10];
+int summ=0,k,sr;
+for (int i =1; i <= 3; i++)
+{
+    //вывод значений
+    Console.Write("Последовательность " + i + " : "); 
+    for (k = 0; k < 10; k++)
+    {
+        x[k] = rn.Next(1,10);
+        Console.Write("{0} ",x[k]);
+        summ += x[k];
+    }
+    sr = summ / k;
+    Console.WriteLine("");
+    Console.WriteLine("Среднее арифметическое: {0}",sr);
+}

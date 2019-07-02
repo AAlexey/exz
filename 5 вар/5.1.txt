@@ -1,0 +1,9 @@
+Console.Write("N=");
+int n = int.Parse(Console.ReadLine());
+Console.Write("K=");
+int k = int.Parse(Console.ReadLine());
+  Console.WriteLine("");
+for (int i=0; i < n; i++)
+{
+    Console.WriteLine("K ={0}", k);
+}

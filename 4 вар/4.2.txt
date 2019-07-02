@@ -1,0 +1,8 @@
+double summ = 0;
+Console.Write("Введите n (колличество повторений):");
+int n = int.Parse(Console.ReadLine());
+for (double i = 1; i <= n; i++)
+{
+    summ += 1 / i;
+}
+Console.WriteLine("Итог:{0}", summ);

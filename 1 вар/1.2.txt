@@ -1,0 +1,19 @@
+int a, b;
+double ch=0;
+do
+{
+    Console.Write("Введите a:");
+    a = int.Parse(Console.ReadLine());
+    Console.Write("Введите b:");
+    b = int.Parse(Console.ReadLine());
+    if (a >= b) Console.WriteLine("B должно быть больше A");
+} while (a >= b);
+for (double i = a; i <= b; i++)
+{
+    //Если нужна
+    //Сумма всех делителей, то добавить перед равно + 
+    //и раскомитить нижнюю 
+    ch = a / i;
+    Console.WriteLine("{0:f2} ", ch);
+}
+//Console.WriteLine("{0:f4}", ch);

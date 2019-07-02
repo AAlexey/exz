@@ -1,0 +1,15 @@
+double summ = 0;
+Console.Write("Введите n:");
+double n = double.Parse(Console.ReadLine());
+while (n <= 0)
+{
+   Console.Write("n>0 \nВВедите n:");
+   n = double.Parse(Console.ReadLine());
+}
+Console.Write("Введите колличество повторений:");
+double p = double.Parse(Console.ReadLine());
+for (double i = n; i <= p; i++)
+{
+    summ += 1 / Math.Pow(2 * i + 1, 2);
+}
+Console.WriteLine("summ = {0:f4}", summ);

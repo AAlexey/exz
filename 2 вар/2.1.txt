@@ -1,0 +1,8 @@
+double summ=0;
+Console.Write("Количество суммируемых членов ряда: ");
+int n = int.Parse(Console.ReadLine());
+for (double i = 1; i <= n; i++)
+{
+    summ += 1 / i;
+}
+Console.WriteLine("Итог:{0:f4}",summ);

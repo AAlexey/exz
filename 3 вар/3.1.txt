@@ -1,0 +1,9 @@
+double a,b=0,sr=0;
+for (int i = 1; i <= 5; i++)
+{
+    Console.Write("Введите " + i + " число:");
+    a = double.Parse(Console.ReadLine());
+    b += a;
+    sr = b / i;
+    Console.WriteLine("Среднее арфиметическое:{0}",sr);
+}
