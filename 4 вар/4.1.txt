@@ -1,6 +1,7 @@
 Random rn = new Random();
 int[] x = new int[10];
-int summ=0,k,sr;
+double summ = 0,sr;
+int k;
 for (int i =1; i <= 3; i++)
 {
     //вывод значений
@@ -13,5 +14,5 @@ for (int i =1; i <= 3; i++)
     }
     sr = summ / k;
     Console.WriteLine("");
-    Console.WriteLine("Среднее арифметическое: {0}",sr);
+    Console.WriteLine("Среднее арифметическое: {0:f}",sr);
 }
